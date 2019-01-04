@@ -47,6 +47,7 @@ for (i = 1; i <= 31; i++) {
             $(this).css("background-color", "lime");
             $(this).css("color", "white");
             $(this).css("text-shadow", "1px 1px black");
+            $(this).css("cursor", "default");
         }
 
         // For the 6th button clicked, the coorisponding value is set as
@@ -59,7 +60,14 @@ for (i = 1; i <= 31; i++) {
                 $(this).css("background-color", "red");
                 $(this).css("color", "white");
                 $(this).css("text-shadow", "1px 1px black");
+                $(this).css("cursor", "default");
+                
                 $("#play").prop("disabled", false);
+                $("#play").css("background-color", "lime");
+                $("#play").css("color", "white");
+                $("#play").css("text-shadow", "1px 1px black");
+                $("#play").css("cursor", "pointer");
+                
             };
         };
     });
@@ -79,12 +87,17 @@ $("#random-numbers").on("click", function () {
 
         if (userPB !== 0) {
             $("#play").prop("disabled", false);
+            $("#play").css("background-color", "lime");
+            $("#play").css("color", "white");
+            $("#play").css("text-shadow", "1px 1px black");
+            $("#play").css("cursor", "pointer");
         };
 
         $("#btn-" + randomNumber).prop("disabled", true);
         $("#btn-" + randomNumber).css("background-color", "lime");
         $("#btn-" + randomNumber).css("color", "white"); 
         $("#btn-" + randomNumber).css("text-shadow", "1px 1px black");
+        $("#btn-" + randomNumber).css("cursor", "default");
     };
 });
 
@@ -101,8 +114,13 @@ $("#random-pb").on("click", function () {
         $("#btn-" + randomNumber).css("background-color", "red");
         $("#btn-" + randomNumber).css("color", "white");
         $("#btn-" + randomNumber).css("text-shadow", "1px 1px black");
+        $("#btn-" + randomNumber).css("cursor", "default");
         if (userNumbers.length === 5) {
             $("#play").prop("disabled", false);
+            $("#play").css("background-color", "lime");
+            $("#play").css("color", "white");
+            $("#play").css("text-shadow", "1px 1px black");
+            $("#play").css("cursor", "pointer");
         };
     };
 });
@@ -118,7 +136,13 @@ $("#reset").on("click", function () {
     $(".button").css("background-color", "");
     $(".button").css("color", "");
     $(".button").css("text-shadow", "");
+    $(".button").css("cursor", "pointer");
+    
     $("#play").prop("disabled", true);
+    $("#play").css("background-color", "");
+    $("#play").css("color", "");
+    $("#play").css("text-shadow", "");
+    $("#play").css("cursor", "default");
 });
 
 // When play button is avalible and clicked, run the simulation

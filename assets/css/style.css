@@ -73,6 +73,10 @@ li {
     cursor: pointer;
 }
 
+#play {
+    cursor: default;
+}
+
 #random-numbers:hover, #random-pb:hover {
     background-color: darkgray;
 }
@@ -84,14 +88,6 @@ li {
 #reset:hover {
     background-color: darkred;
     color: white;
-}
-
-#play {
-    background-color: cyan;
-}
-
-#play:hover {
-    background-color: steelblue;
 }
 
 #random-numbers {
