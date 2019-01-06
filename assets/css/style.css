@@ -64,6 +64,10 @@ li {
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: darkgray;
+}
+
 .action {
     margin-top: 10px;
     width: 180px;
